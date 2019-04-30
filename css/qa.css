@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  touch-callout: none;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transf: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transf: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.swiper-container img {
+  width: 100%;
+}
+.swiper-container .swiper-slide {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .page1 {
+  background-image: url("../images/01_01.jpg");
+}
+.swiper-container .page1 .text {
+  position: absolute;
+  top: 10%;
+  font-size: 18px;
+  color: white;
+  letter-spacing: .2rem;
+}
+.swiper-container .page1 .logo {
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.swiper-container .page1 .logo img {
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.image {
+  display: none;
+}
+#music,
+#music #btn {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+#music {
+  position: fixed;
+  top: 0.7rem;
+  left: 50%;
+  margin-left: -0.85rem;
+  z-index: 99999999;
+}
+#music,
+#music #btn {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+#music .on {
+  position: relative;
+  background: url(../images/music_off1.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  -webkit-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+}
+audio:not([controls]) {
+  display: none !important;
+}
+audio {
+  width: 300px;
+  height: 54px;
+}
+#music .off {
+  background: url(../images/music_off1.png) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+.btn-next {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.btn-next span {
+  display: block;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.next {
+  width: 1px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  /*是因为, 虽然宽高度为0, 但在IE6下会具有默认的 */
+  line-height: 0;
+  /* 字体大小和行高, 导致盒子呈现被撑开的长矩形 */
+  border-width: 10px;
+  border-style: dashed dashed solid dashed;
+  /*IE6下, 设置余下三条边的border-style为dashed,即可达到透明的效果*/
+  border-color: transparent transparent white transparent;
+  -webkit-animation: arrowing 1.5s infinite;
+  animation: arrowing 1.5s infinite;
+}
+@-webkit-keyframes arrowing {
+  0% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+}
+@keyframes arrowing {
+  0% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+}
