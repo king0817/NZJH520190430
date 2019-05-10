@@ -134,14 +134,15 @@ body {
   height: 1px;
   top: 50%;
 }
-.swiper-container .page2 .box {
-  top: 0;
+.swiper-container .page2 .case-box {
   position: absolute;
+  top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.swiper-container .page2 .box div {
+.swiper-container .page2 .case-box div {
   border-radius: 50%;
+  margin: 0 auto;
 }
 .swiper-container .page2 .box-first {
   background-color: #e4bfba;
@@ -451,6 +452,38 @@ body {
   bottom: 0;
 }
 .swiper-container .page10 .Table img {
+  width: 100%;
+}
+.swiper-container .page11 {
+  background-color: black;
+}
+.swiper-container .page11 .bg {
+  width: 80%;
+  height: 96%;
+  border-radius: 50px;
+  background-color: #d9958d;
+}
+.swiper-container .page11 .bg .title {
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+.swiper-container .page11 .bg .text {
+  width: 98%;
+  margin: 20px auto 0 auto;
+}
+.swiper-container .page11 .footIcon {
+  position: absolute;
+  width: 90%;
+  bottom: 8%;
+  margin-left: 5px;
+  z-index: 9999;
+}
+.swiper-container .page11 .Table {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.swiper-container .page11 .Table img {
   width: 100%;
 }
 .swiper-container .box {
