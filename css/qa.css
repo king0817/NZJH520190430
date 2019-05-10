@@ -468,7 +468,7 @@ body {
   margin: 20px auto 0 auto;
 }
 .swiper-container .page11 .bg .text {
-  width: 98%;
+  width: 48%;
   margin: 20px auto 0 auto;
 }
 .swiper-container .page11 .footIcon {
@@ -478,6 +478,20 @@ body {
   margin-left: 5px;
   z-index: 9999;
 }
+.swiper-container .page11 .box-cy {
+  position: absolute;
+  bottom: 6%;
+  z-index: 999;
+  width: 56%;
+  margin-left: -2%;
+}
+.swiper-container .page11 .footGirl {
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
+  width: 70%;
+  margin-left: 5%;
+}
 .swiper-container .page11 .Table {
   position: absolute;
   width: 100%;
@@ -485,6 +499,23 @@ body {
 }
 .swiper-container .page11 .Table img {
   width: 100%;
+}
+.swiper-container .page12 .title {
+  position: absolute;
+  top: 0;
+  width: 30%;
+}
+.swiper-container .page12 .titleimg {
+  position: absolute;
+  top: 100%;
+  width: 50px;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -23px;
+  animation: swing 2s;
+}
+.swiper-container .rel {
+  position: relative;
 }
 .swiper-container .box {
   position: absolute;
