@@ -52,6 +52,50 @@ body {
     transform: rotate(360deg);
   }
 }
+@keyframes bigBox {
+  from {
+    transform: scale3d(12, 12, 12);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes narrow {
+  from {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  to {
+    transform: scale3d(15, 15, 15);
+    opacity: 0;
+  }
+}
+@keyframes bigBox {
+  0% {
+    transform: scale3d(12, 12, 12);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes lineW {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.bigBox {
+  -webkit-animation-name: bigBox;
+  animation-name: bigBox;
+}
+.narrow {
+  -webkit-animation-name: narrow;
+  animation-name: narrow;
+}
 .swiper-container img {
   width: 100%;
 }
@@ -81,24 +125,6 @@ body {
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-@keyframes bigBox {
-  0% {
-    transform: scale3d(12, 12, 12);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes lineW {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80%;
-  }
-}
 .swiper-container .page2 {
   background-color: #d9958d;
 }
@@ -107,10 +133,6 @@ body {
   width: 100%;
   height: 1px;
   top: 50%;
-}
-.swiper-container .page2 .bigBox {
-  -webkit-animation-name: bigBox;
-  animation-name: bigBox;
 }
 .swiper-container .page2 .box {
   top: 0;
@@ -225,6 +247,157 @@ body {
   display: block;
   background-color: #d9958d;
 }
+.swiper-container .page4 .bg {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+.swiper-container .page4 .bg .icon_img {
+  position: absolute;
+  width: 100%;
+}
+.swiper-container .page5 .gx {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -120px;
+}
+.swiper-container .page5 .asBox {
+  width: 100px;
+  height: 100px;
+  border: 50px solid white;
+  border-radius: 50%;
+  padding: 10%;
+}
+.swiper-container .page5 .text {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  top: 70%;
+}
+.swiper-container .page6 .glass {
+  width: 70px;
+  position: absolute;
+  top: 5%;
+}
+.swiper-container .page6 .mulu {
+  position: absolute;
+  left: 50%;
+  margin-left: -13px;
+  top: 30%;
+  width: 26px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+.swiper-container .page6 .CatalogBox {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.swiper-container .page6 .CatalogBox .CatalogBoxs {
+  padding: 10px;
+}
+.swiper-container .page6 .CatalogBox .CatalogBoxs .CatalogBoxs-item {
+  padding: 10px;
+  width: 50%;
+  float: left;
+}
+.swiper-container .page6 .CatalogBox .CatalogBoxs .CatalogBoxs-item .CatalogBoxs-item-img {
+  width: 100%;
+  bottom: 0;
+}
+.swiper-container .page7 {
+  background-image: url(../images/embrace.png);
+  background-size: 100% auto !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.swiper-container .page7 .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  overflow: hidden;
+}
+.swiper-container .page7 .case1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(232, 157, 125, 0.7);
+  border-radius: 50%;
+}
+.swiper-container .page7 .case2 {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background-color: rgba(53, 236, 230, 0.3);
+  border-radius: 50%;
+}
+.swiper-container .page7 .case3 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: #d9958d;
+  border-radius: 50%;
+  text-align: center;
+}
+.swiper-container .page7 .case3 .logo1 {
+  margin-top: 20px;
+  width: 26%;
+}
+.swiper-container .page7 .text {
+  position: absolute;
+  margin-top: 34px;
+  color: white;
+  font-size: 36px;
+}
+.swiper-container .page8 {
+  background-color: black;
+}
+.swiper-container .page8 .bg {
+  width: 80%;
+  height: 96%;
+  border-radius: 50px;
+  background-color: #d9958d;
+}
+.swiper-container .page8 .bg .title {
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+.swiper-container .page8 .bg .text {
+  width: 60%;
+  margin: 0 auto;
+}
+.swiper-container .page8 .box {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  z-index: 999;
+  width: 80%;
+}
+.swiper-container .page8 .box img {
+  width: 100%;
+}
+.swiper-container .page8 .box .box-img {
+  text-align: center;
+}
+.swiper-container .page8 .box .box-img img {
+  width: 60%;
+}
+.swiper-container .page8 .Table {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.swiper-container .page8 .Table img {
+  width: 100%;
+}
 .image {
   display: none;
 }
@@ -236,8 +409,7 @@ body {
 #music {
   position: fixed;
   top: 0.7rem;
-  left: 50%;
-  margin-left: -0.85rem;
+  right: 15px;
   z-index: 99999999;
 }
 #music,
