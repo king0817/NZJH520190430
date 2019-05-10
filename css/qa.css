@@ -374,21 +374,12 @@ body {
   width: 60%;
   margin: 0 auto;
 }
-.swiper-container .page8 .box {
+.swiper-container .page8 .footIcon {
   position: absolute;
-  bottom: 10%;
-  display: flex;
-  z-index: 999;
-  width: 80%;
-}
-.swiper-container .page8 .box img {
-  width: 100%;
-}
-.swiper-container .page8 .box .box-img {
-  text-align: center;
-}
-.swiper-container .page8 .box .box-img img {
-  width: 60%;
+  width: 90%;
+  bottom: 8%;
+  margin-left: 5px;
+  z-index: 9999;
 }
 .swiper-container .page8 .Table {
   position: absolute;
@@ -397,6 +388,86 @@ body {
 }
 .swiper-container .page8 .Table img {
   width: 100%;
+}
+.swiper-container .page9 {
+  background-color: black;
+}
+.swiper-container .page9 .bg {
+  width: 80%;
+  height: 96%;
+  border-radius: 50px;
+  background-color: #d9958d;
+}
+.swiper-container .page9 .bg .title {
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+.swiper-container .page9 .bg .text {
+  width: 60%;
+  margin: 0 auto;
+}
+.swiper-container .page9 .footIcon {
+  position: absolute;
+  width: 90%;
+  bottom: 8%;
+  margin-left: 5px;
+  z-index: 9999;
+}
+.swiper-container .page9 .Table {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.swiper-container .page9 .Table img {
+  width: 100%;
+}
+.swiper-container .page10 {
+  background-color: black;
+}
+.swiper-container .page10 .bg {
+  width: 80%;
+  height: 96%;
+  border-radius: 50px;
+  background-color: #d9958d;
+}
+.swiper-container .page10 .bg .title {
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+.swiper-container .page10 .bg .text {
+  width: 98%;
+  margin: 20px auto 0 auto;
+}
+.swiper-container .page10 .footIcon {
+  position: absolute;
+  width: 90%;
+  bottom: 8%;
+  margin-left: 5px;
+  z-index: 9999;
+}
+.swiper-container .page10 .Table {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.swiper-container .page10 .Table img {
+  width: 100%;
+}
+.swiper-container .box {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  z-index: 999;
+  width: 80%;
+}
+.swiper-container .box img {
+  width: 100%;
+}
+.swiper-container .box .box-img {
+  text-align: center;
+}
+.swiper-container .box .box-img img {
+  width: 60%;
 }
 .image {
   display: none;
