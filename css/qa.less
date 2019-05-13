@@ -534,20 +534,182 @@ body {
     }
   }
   .page12 {
-    .title {
+    .Cake {
       position: absolute;
-      top: 0;
-      width: 30%;
+      bottom: 0;
+      height: 218.5px;
+      .textImg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        // width: 50px;
+        z-index: 999;
+        img {
+          width: auto;
+          height: 218.5px;
+        }
+      }
     }
-    .titleimg{
+  }
+  .page13 {
+    .Cake {
       position: absolute;
-      top: 100%;
-      width: 50px;
-      left: 50%;
-      margin-top: -5px;
-      margin-left: -23px;
-      animation: swing 2s;
+      bottom: 0;
+      // height: 218.5px;
+      .textImg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        // width: 50px;
+        z-index: 999;
+        img {
+          width: auto;
+          height: 218.5px;
+        }
+      }
     }
+  }
+  .page14 {
+    .Cake {
+      position: absolute;
+      bottom: 0;
+      // height: 218.5px;
+      .textImg {
+        position: absolute;
+        width: 100%;
+        bottom: 96%;
+        z-index: 999;
+        text-align: center;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .page15 {
+    .Cake {
+      position: absolute;
+      bottom: 0;
+      .cake-item {
+        width: 50%;
+        float: left;
+      }
+      .cake-item-text {
+        width: 50%;
+        float: left;
+        // padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .page16 {
+    .sfl-content {
+      width: 150%;
+      position: absolute;
+      left: -50%;
+      bottom: 100px;
+    }
+    .text {
+      position: absolute;
+      bottom: -2%;
+      left: -10%;
+    }
+  }
+  .page18 {
+    .card {
+      width: 56%;
+      height: 300px;
+      top: 7%;
+      position: absolute;
+      background-color: #fdcdca;
+      .logo {
+        width: 26%;
+        margin: 20px auto;
+      }
+      .box-header {
+        margin-top: -15px;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(119, 129, 73);
+        margin-bottom: 2px;
+      }
+      .text {
+        text-align: center;
+        color: rgb(136, 86, 66);
+      }
+    }
+    .qc {
+      position: absolute;
+      z-index: 999;
+      width: 150%;
+      top: 40%;
+    }
+  }
+  .page19 {
+    .card {
+      width: 56%;
+      height: 300px;
+      top: 7%;
+      position: absolute;
+      background-color: #fdcdca;
+      .logo {
+        width: 26%;
+        margin: 20px auto;
+      }
+      .box-header {
+        margin-top: -15px;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(119, 129, 73);
+        margin-bottom: 2px;
+      }
+      .text {
+        text-align: center;
+        color: rgb(136, 86, 66);
+      }
+    }
+    .qc {
+      position: absolute;
+      z-index: 999;
+      width: 130%;
+      bottom: 0;
+    }
+  }
+  .page21 {
+    .video {
+      position: absolute;
+      top: 5%;
+      padding: 0 15px;
+    }
+  }
+  .slideLeft {
+    animation-name: slideLeft;
+  }
+  @keyframes slideLeft {
+    from {
+      left: 0;
+    }
+    to {
+      left: -50%;
+    }
+  }
+  .sfl-title {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    z-index: 999;
+  }
+  .sfl-titleimg {
+    position: absolute;
+    top: 100%;
+    width: 50px;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -23px;
+    animation: swings 3s linear infinite;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 0;
+    z-index: 99;
   }
   .rel {
     position: relative;
@@ -569,7 +731,17 @@ body {
     }
   }
 }
-
+@keyframes swings {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
 .image {
   display: none;
 }

@@ -500,19 +500,162 @@ body {
 .swiper-container .page11 .Table img {
   width: 100%;
 }
-.swiper-container .page12 .title {
+.swiper-container .page12 .Cake {
+  position: absolute;
+  bottom: 0;
+  height: 218.5px;
+}
+.swiper-container .page12 .Cake .textImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.swiper-container .page12 .Cake .textImg img {
+  width: auto;
+  height: 218.5px;
+}
+.swiper-container .page13 .Cake {
+  position: absolute;
+  bottom: 0;
+}
+.swiper-container .page13 .Cake .textImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.swiper-container .page13 .Cake .textImg img {
+  width: auto;
+  height: 218.5px;
+}
+.swiper-container .page14 .Cake {
+  position: absolute;
+  bottom: 0;
+}
+.swiper-container .page14 .Cake .textImg {
+  position: absolute;
+  width: 100%;
+  bottom: 96%;
+  z-index: 999;
+  text-align: center;
+}
+.swiper-container .page14 .Cake .textImg img {
+  width: 80%;
+}
+.swiper-container .page15 .Cake {
+  position: absolute;
+  bottom: 0;
+}
+.swiper-container .page15 .Cake .cake-item {
+  width: 50%;
+  float: left;
+}
+.swiper-container .page15 .Cake .cake-item-text {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+.swiper-container .page16 .sfl-content {
+  width: 150%;
+  position: absolute;
+  left: -50%;
+  bottom: 100px;
+}
+.swiper-container .page16 .text {
+  position: absolute;
+  bottom: -2%;
+  left: -10%;
+}
+.swiper-container .page18 .card {
+  width: 56%;
+  height: 300px;
+  top: 7%;
+  position: absolute;
+  background-color: #fdcdca;
+}
+.swiper-container .page18 .card .logo {
+  width: 26%;
+  margin: 20px auto;
+}
+.swiper-container .page18 .card .box-header {
+  margin-top: -15px;
+  text-align: center;
+  font-size: 30px;
+  color: #778149;
+  margin-bottom: 2px;
+}
+.swiper-container .page18 .card .text {
+  text-align: center;
+  color: #885642;
+}
+.swiper-container .page18 .qc {
+  position: absolute;
+  z-index: 999;
+  width: 150%;
+  top: 40%;
+}
+.swiper-container .page19 .card {
+  width: 56%;
+  height: 300px;
+  top: 7%;
+  position: absolute;
+  background-color: #fdcdca;
+}
+.swiper-container .page19 .card .logo {
+  width: 26%;
+  margin: 20px auto;
+}
+.swiper-container .page19 .card .box-header {
+  margin-top: -15px;
+  text-align: center;
+  font-size: 30px;
+  color: #778149;
+  margin-bottom: 2px;
+}
+.swiper-container .page19 .card .text {
+  text-align: center;
+  color: #885642;
+}
+.swiper-container .page19 .qc {
+  position: absolute;
+  z-index: 999;
+  width: 130%;
+  bottom: 0;
+}
+.swiper-container .page21 .video {
+  position: absolute;
+  top: 5%;
+  padding: 0 15px;
+}
+.swiper-container .slideLeft {
+  animation-name: slideLeft;
+}
+@keyframes slideLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -50%;
+  }
+}
+.swiper-container .sfl-title {
   position: absolute;
   top: 0;
   width: 30%;
+  z-index: 999;
 }
-.swiper-container .page12 .titleimg {
+.swiper-container .sfl-titleimg {
   position: absolute;
   top: 100%;
   width: 50px;
   left: 50%;
-  margin-top: -5px;
+  margin-top: -8px;
   margin-left: -23px;
-  animation: swing 2s;
+  animation: swings 3s linear infinite;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 0;
+  z-index: 99;
 }
 .swiper-container .rel {
   position: relative;
@@ -532,6 +675,17 @@ body {
 }
 .swiper-container .box .box-img img {
   width: 60%;
+}
+@keyframes swings {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
 }
 .image {
   display: none;
