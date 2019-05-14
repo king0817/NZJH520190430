@@ -272,6 +272,7 @@
                 swiper-animate-effect="fadeInUpBig"
                 swiper-animate-duration="1s"
                 swiper-animate-delay="1s"
+                onclick="link('#slide12')"
               >
                 <img src="./images/menu_2.jpg" alt="" />
                 <img
@@ -285,6 +286,7 @@
                 swiper-animate-effect="fadeInUpBig"
                 swiper-animate-duration="1s"
                 swiper-animate-delay="1.1s"
+                onclick="link('#slide18')"
               >
                 <img src="./images/menu_3.jpg" alt="" />
                 <img
@@ -298,6 +300,7 @@
                 swiper-animate-effect="fadeInUpBig"
                 swiper-animate-duration="1s"
                 swiper-animate-delay="1.1s"
+                onclick="link('#slide21')"
               >
                 <img src="./images/menu_4.jpg" alt="" />
                 <img
@@ -901,16 +904,20 @@
           </div>
         </div>
         <div class="swiper-slide page23" data-hash="slide23">
-          <div class="text ani"
-          swiper-animate-effect="fadeIn"
-          swiper-animate-duration="1s"
-          swiper-animate-delay="1s">
+          <div
+            class="text ani"
+            swiper-animate-effect="fadeIn"
+            swiper-animate-duration="1s"
+            swiper-animate-delay="1s"
+          >
             <img src="./images/text11.png" alt="" />
           </div>
-          <div class="left ani"
-          swiper-animate-effect="fadeInLeft"
-          swiper-animate-duration="1s"
-          swiper-animate-delay="1.5s">
+          <div
+            class="left ani"
+            swiper-animate-effect="fadeInLeft"
+            swiper-animate-duration="1s"
+            swiper-animate-delay="1.5s"
+          >
             <img src="./images/3d_03.png" alt="" />
           </div>
           <div class="turntable">
@@ -924,55 +931,63 @@
           >
             <img src="./images/3d_01.png" alt="" />
           </div>
-          <div class="foot-right ani"
-          swiper-animate-effect="fadeInRight"
-          swiper-animate-duration="1s"
-          swiper-animate-delay=".5s"><img src="./images/3d_04.png" alt="" /></div>
+          <div
+            class="foot-right ani"
+            swiper-animate-effect="fadeInRight"
+            swiper-animate-duration="1s"
+            swiper-animate-delay=".5s"
+          >
+            <img src="./images/3d_04.png" alt="" />
+          </div>
         </div>
         <div class="swiper-slide page24" data-hash="slide24">
-            <div
-              class="case1 ani"
-              swiper-animate-effect="bounceIn"
-              swiper-animate-duration="1s"
-              swiper-animate-delay=".2s"
-            ></div>
-            <div
-              class="case2 ani"
-              swiper-animate-effect="bounceIn"
-              swiper-animate-duration="1s"
-              swiper-animate-delay=".1s"
-            ></div>
-            <div
-              class="case3 ani"
-              swiper-animate-effect="bounceIn"
-              swiper-animate-duration="1s"
-              swiper-animate-delay="0s"
-              onclick="link('#slide6')"
-            >
-              <img
-                class="logo1 ani"
-                swiper-animate-effect="fadeIn"
-                swiper-animate-duration="1s"
-                swiper-animate-delay=".5s"
-                src="./images/01_02.png"
-                alt=""
-              />
-            </div>
-            <div
-              class="text ani"
+          <div
+            class="case1 ani"
+            swiper-animate-effect="bounceIn"
+            swiper-animate-duration="1s"
+            swiper-animate-delay=".2s"
+          ></div>
+          <div
+            class="case2 ani"
+            swiper-animate-effect="bounceIn"
+            swiper-animate-duration="1s"
+            swiper-animate-delay=".1s"
+          ></div>
+          <div
+            class="case3 ani"
+            swiper-animate-effect="bounceIn"
+            swiper-animate-duration="1s"
+            swiper-animate-delay="0s"
+            onclick="link('#slide6')"
+          >
+            <img
+              class="logo1 ani"
               swiper-animate-effect="fadeIn"
               swiper-animate-duration="1s"
               swiper-animate-delay=".5s"
-              
-            >回到目录
-            </div>
+              src="./images/01_02.png"
+              alt=""
+            />
           </div>
+          <div
+            class="text ani"
+            swiper-animate-effect="fadeIn"
+            swiper-animate-duration="1s"
+            swiper-animate-delay=".5s"
+          >
+            回到目录
+          </div>
+        </div>
       </div>
       <!--<div class="swiper-pagination"></div>-->
     </div>
     <script>
-      function link(text){
-          location=text
+      function link(text) {
+        location = text;
+      }
+
+      function activeIndex(index) {
+        location = "#slide" + (index + 2);
       }
       function Calculation() {
         const BodyH = $(window).height();
@@ -1036,6 +1051,36 @@
             //     url("pinpai.html")
             // }
             Calculation();
+
+            if (this.activeIndex < 2) {
+              setYime = setTimeout(() => {
+                activeIndex(this.activeIndex);
+              }, 3000);
+            } else {
+              clearTimeout(setYime);
+            }
+            if (this.activeIndex == 2) {
+              setYime = setTimeout(() => {
+                activeIndex(this.activeIndex);
+              }, 11000);
+            } else {
+              clearTimeout(setYime);
+            }
+            if (this.activeIndex == 3) {
+              setYime = setTimeout(() => {
+                activeIndex(this.activeIndex);
+              }, 5000);
+            } else {
+              clearTimeout(setYime);
+            }
+            if (this.activeIndex == 4) {
+              setYime = setTimeout(() => {
+                activeIndex(this.activeIndex);
+              }, 3000);
+            } else {
+              clearTimeout(setYime);
+            }
+
             if (this.activeIndex == "21") {
               setTimeout(function() {
                 vid.play();

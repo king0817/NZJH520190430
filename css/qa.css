@@ -52,32 +52,67 @@ body {
     transform: rotate(360deg);
   }
 }
-@keyframes bigBox {
+@-webkit-keyframes bigBox {
   from {
+    -webkit-transform: scale3d(12, 12, 12);
     transform: scale3d(12, 12, 12);
   }
   to {
+    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 }
-@keyframes narrow {
+@keyframes bigBox {
   from {
+    -webkit-transform: scale3d(12, 12, 12);
+    transform: scale3d(12, 12, 12);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes narrow {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
     opacity: 1;
   }
   to {
+    -webkit-transform: scale3d(15, 15, 15);
+    transform: scale3d(15, 15, 15);
+    opacity: 0;
+  }
+}
+@keyframes narrow {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale3d(15, 15, 15);
     transform: scale3d(15, 15, 15);
     opacity: 0;
   }
 }
 @keyframes bigBox {
   0% {
+    -webkit-transform: scale3d(12, 12, 12);
     transform: scale3d(12, 12, 12);
   }
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes lineW {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
   }
 }
 @keyframes lineW {
@@ -138,6 +173,8 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .swiper-container .page2 .case-box div {
@@ -197,6 +234,7 @@ body {
   height: 2px;
 }
 .swiper-container .page3 .bg .lineW {
+  -webkit-animation-name: lineW;
   animation-name: lineW;
 }
 .swiper-container .page3 .bg .before {
@@ -298,7 +336,9 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .swiper-container .page6 .CatalogBox .CatalogBoxs {
@@ -554,6 +594,7 @@ body {
 .swiper-container .page15 .Cake .cake-item-text {
   width: 50%;
   float: left;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .swiper-container .page16 .sfl-content {
@@ -639,6 +680,7 @@ body {
 .swiper-container .page22 .vid #vid {
   border-radius: 20px;
   width: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .swiper-container .page22 .videotop {
@@ -652,6 +694,7 @@ body {
   bottom: 0;
 }
 .swiper-container .slideLeft {
+  -webkit-animation-name: slideLeft;
   animation-name: slideLeft;
 }
 .swiper-container .page23 .text {
@@ -671,7 +714,10 @@ body {
   position: absolute;
   bottom: 0;
   width: 104%;
+  -webkit-animation: rotating 20s infinite linear;
   animation: rotating 20s infinite linear;
+  -webkit-transform-origin: 50% 55%;
+  -ms-transform-origin: 50% 55%;
   transform-origin: 50% 55%;
 }
 .swiper-container .page23 .foot-left {
@@ -733,6 +779,14 @@ body {
   color: #c26296;
   font-size: 30px;
 }
+@-webkit-keyframes slideLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -50%;
+  }
+}
 @keyframes slideLeft {
   from {
     left: 0;
@@ -754,8 +808,12 @@ body {
   left: 50%;
   margin-top: -8px;
   margin-left: -23px;
+  -webkit-animation: swings 3s linear infinite;
   animation: swings 3s linear infinite;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
   transform-origin: 50% 0;
   z-index: 99;
 }
@@ -765,6 +823,8 @@ body {
 .swiper-container .box {
   position: absolute;
   bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   z-index: 999;
   width: 80%;
@@ -778,14 +838,31 @@ body {
 .swiper-container .box .box-img img {
   width: 60%;
 }
-@keyframes swings {
+@-webkit-keyframes swings {
   0% {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
   50% {
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   100% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+@keyframes swings {
+  0% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 }
